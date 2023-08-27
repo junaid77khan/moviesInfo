@@ -14,8 +14,11 @@ let rating = document.getElementById("rating");
 let img = document.getElementById('img');
 let movieContent = document.getElementById('movieContent');
 movieContent.classList.add("vanish");
+let loaderContainer = document.getElementById('loader-container');
+loaderContainer.classList.add("vanish");
 
 const searchMovie = () => {
+    loaderContainer.classList.remove("vanish");
     movieContent.classList.remove("vanish");
     let api = 'https://www.omdbapi.com/?apikey=61e576a4&t=';
     let movieName = document.getElementById('movieName');
@@ -23,6 +26,7 @@ const searchMovie = () => {
     fetch(query).then((data) => {
         return data.json();
     }).then((data) => {
+        loaderContainer.classList.add("vanish");
         console.log(data);
         name.innerText = data.Title;
         release.innerText = data.Released;        
