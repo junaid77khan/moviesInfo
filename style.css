@@ -199,4 +199,9 @@ body{
     #btn{
         padding: 0.6rem;
     }
+    #movieContent{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 }
