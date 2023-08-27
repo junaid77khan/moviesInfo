@@ -180,18 +180,18 @@ body{
 
 @media (max-width : 620px) {
     .nav-bar{
-        width: 25rem;
+        width: 20rem;
     }
     #movieContent {
-        width: 25rem;
-        height: 52%;
+        width: 20rem;
+        height: 55%;
     }
     #name {
         font-size: 1.2rem;
     }
     .info p {
         font-size: 0.7rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     #movieName {
         padding: 0.6rem;
