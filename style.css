@@ -76,6 +76,27 @@ body{
     visibility: hidden;
 }
 
+.loader {
+    border: 2px solid #f3f3f3; /* Light grey */
+    border-top: 2px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+#loader-container{
+    display: grid;
+    place-items: center;
+    margin-top: 20rem;
+    position: absolute;
+}
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 #movieContent{
     height: 80%;
     width: 45rem;
@@ -133,8 +154,47 @@ body{
     margin-top: 1.4rem;
 }
 
-@media (max-width : 786px) {
+@media (max-width : 850px) {
     .nav-bar{
-        width: 30rem;
+        width: 35rem;
+    }
+    #movieContent {
+        width: 35rem;
+    }
+    #name {
+        font-size: 1.4rem;
+    }
+    .info p {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+    #movieName {
+        padding: 0.7rem;
+    }
+    #btn{
+        padding: 0.7rem;
+    }
+}
+
+@media (max-width : 620px) {
+    .nav-bar{
+        width: 25rem;
+    }
+    #movieContent {
+        width: 25rem;
+        height: 52%;
+    }
+    #name {
+        font-size: 1.2rem;
+    }
+    .info p {
+        font-size: 0.7rem;
+        margin-top: 1rem;
+    }
+    #movieName {
+        padding: 0.6rem;
+    }
+    #btn{
+        padding: 0.6rem;
     }
 }
