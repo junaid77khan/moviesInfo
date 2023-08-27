@@ -204,4 +204,8 @@ body{
         flex-wrap: wrap;
         gap: 4rem;
     }
+    .poster img{
+        height: 20rem;
+        text-align: center;
+    }
 }
