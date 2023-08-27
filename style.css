@@ -202,6 +202,6 @@ body{
     #movieContent{
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 4rem;
     }
 }
